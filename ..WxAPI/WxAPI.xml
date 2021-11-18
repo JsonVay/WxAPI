@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WxAPI</name>
+    </assembly>
+    <members>
+        <member name="M:WxAPI.Controllers.AuthenticationController.RequestToken(System.String)">
+            <summary>
+            获取token
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WxAPI.Controllers.AuthenticationController.RefreshToken(System.String)">
+            <summary>
+            刷新token
+            </summary>
+            <param name="openid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WxAPI.Controllers.QuestionFeedbackController.GetQuestionType">
+            <summary>
+            获取问题类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WxAPI.Controllers.QuestionFeedbackController.GetQuestionTypeDetaile(System.Int32)">
+            <summary>
+            获取问题类型明细
+            </summary>
+            <param name="pId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WxAPI.Helper.JwtHelper.GetAuthToken(System.String,WxAPI.Model.TokenManagementModel)">
+            <summary>
+            获取token
+            </summary>
+            <param name="openid"></param>
+            <param name="_tokenManagement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WxAPI.Helper.JwtHelper.SerializeToken(System.String)">
+            <summary>
+            解析Token
+            </summary>
+            <param name="jwtStr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WxAPI.Helper.LogHelper">
+            <summary>
+            log4net日志帮助类
+            </summary>
+        </member>
+        <member name="M:WxAPI.Helper.LogHelper.Info(System.String,System.Exception)">
+            <summary>
+            普通日志
+            </summary>
+            <param name="message"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="M:WxAPI.Helper.LogHelper.Warn(System.String,System.Exception)">
+            <summary>
+            告警日志
+            </summary>
+            <param name="message"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="M:WxAPI.Helper.LogHelper.Error(System.String,System.Exception)">
+            <summary>
+            错误日志
+            </summary>
+            <param name="message"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="M:WxAPI.Helper.LogHelper.Debug(System.String,System.Exception)">
+            <summary>
+            调试日志
+            </summary>
+            <param name="message"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="M:WxAPI.Helper.LogHelper.Fatal(System.String,System.Exception)">
+            <summary>
+            毁灭性错误
+            </summary>
+            <param name="message"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="P:WxAPI.Model.JsonReturn.Status">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:WxAPI.Model.JsonReturn.Message">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:WxAPI.Model.JsonReturn.Data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="M:WxAPI.Services.Services.QuestionFeedbackServies.GetQuestionType">
+            <summary>
+            获取问题类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WxAPI.Services.Services.QuestionFeedbackServies.GetQuestionTypeDetaile(System.Int32)">
+            <summary>
+            获取问题类型明细
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WxAPI.Services.Services.QuestionFeedbackServies.GetQuestionTypeInfoJurisdiction">
+            <summary>
+            周报，详情权限名单
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
